@@ -3,25 +3,44 @@ import home1 from "../img/home1.png";
 //Styled
 // import styled from "styled-components";
 import { StyledAbout, StyledDescription, StyledImage, StyledHide } from "../styles";
+//Framer motion
+import {motion} from 'framer-motion';
 
 
 const AboutSection = () => {
+
+  const titleAnim = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 2 } },
+  };
+  const containerAnim ={
+    hidden: { x: 100 },
+    show: { x: 0, transition: { duration: 0.75, ease: "easeOut", staggerChildren: 1 }  },
+  };
+
   return (
     <StyledAbout>
       <StyledDescription>
-        <div className="title">
+        <motion.div 
+          variants={containerAnim} 
+          initial="hidden" 
+          animate="show" 
+          className="title"
+        >
           <StyledHide>
-            <h2>We work to make</h2>
+            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>
+            <motion.h2 variants={titleAnim}>
               your <span>dreams</span> come
-            </h2>
+            </motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>true.</h2>
+            <motion.h2 variants={titleAnim}>
+              true.
+            </motion.h2>
           </StyledHide>
-        </div>
+        </motion.div>
         <p>
           Contact us for sny photography or videography idea that you have.. We
           have pro's with amazing skills.

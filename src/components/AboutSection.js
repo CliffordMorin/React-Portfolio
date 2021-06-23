@@ -5,18 +5,12 @@ import home1 from "../img/home1.png";
 import { StyledAbout, StyledDescription, StyledImage, StyledHide } from "../styles";
 //Framer motion
 import {motion} from 'framer-motion';
+//Animation
+import {containerAnim} from "../animation";
+import {titleAnim} from "../animation";
 
 
 const AboutSection = () => {
-
-  const titleAnim = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { duration: 2 } },
-  };
-  const containerAnim ={
-    hidden: { x: 100 },
-    show: { x: 0, transition: { duration: 0.75, ease: "easeOut", staggerChildren: 1 }  },
-  };
 
   return (
     <StyledAbout>

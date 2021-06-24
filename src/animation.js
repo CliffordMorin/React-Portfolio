@@ -26,12 +26,12 @@ export const titleAnim = {
     show: { y: 0, transition: { duration: 0.75, ease: "easeOut" } },
   };
 
-  export const fadeAnim ={
+export const fadeAnim ={
     hidden: { opacity: 0 },
     show: { opacity: 1, transition: { duration: 0.75, ease: "easeOut"}  },
   };
 
-  export const photoAnim = {
+export const photoAnim = {
       hidden: {scale: 1.5, opacity: 0},
       show: {
           scale:1,
@@ -39,6 +39,8 @@ export const titleAnim = {
           transition: {
               ease: 'easeOut',
               duration: 0.75,
-          }
-      }
-  }
+          },
+      },
+  };
+
+  

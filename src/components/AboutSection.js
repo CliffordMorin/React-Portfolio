@@ -7,6 +7,7 @@ import { StyledAbout, StyledDescription, StyledImage, StyledHide } from "../styl
 import {motion} from 'framer-motion';
 //Animation
 import {fadeAnim, titleAnim, photoAnim} from "../animation";
+import Wave from "./Wave";
 
 
 const AboutSection = () => {
@@ -38,6 +39,7 @@ const AboutSection = () => {
       <StyledImage >
         <motion.img variants={photoAnim} src={home1} alt="guy with camera" />
       </StyledImage>
+      <Wave />
     </StyledAbout>
   );
 };

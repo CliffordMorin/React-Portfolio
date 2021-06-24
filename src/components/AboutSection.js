@@ -6,8 +6,7 @@ import { StyledAbout, StyledDescription, StyledImage, StyledHide } from "../styl
 //Framer motion
 import {motion} from 'framer-motion';
 //Animation
-import {containerAnim} from "../animation";
-import {titleAnim} from "../animation";
+import {fadeAnim, titleAnim, photoAnim} from "../animation";
 
 
 const AboutSection = () => {
@@ -15,12 +14,7 @@ const AboutSection = () => {
   return (
     <StyledAbout>
       <StyledDescription>
-        <motion.div 
-          variants={containerAnim} 
-          initial="hidden" 
-          animate="show" 
-          className="title"
-        >
+        <motion.div>
           <StyledHide>
             <motion.h2 variants={titleAnim}>We work to make</motion.h2>
           </StyledHide>
@@ -35,14 +29,14 @@ const AboutSection = () => {
             </motion.h2>
           </StyledHide>
         </motion.div>
-        <p>
+        <motion.p variants={fadeAnim}>
           Contact us for sny photography or videography idea that you have.. We
           have pro's with amazing skills.
-        </p>
-        <button>Contact us</button>
+        </motion.p>
+        <motion.button variants={fadeAnim}>Contact us</motion.button>
       </StyledDescription>
-      <StyledImage>
-        <img src={home1} alt="guy with camera" />
+      <StyledImage >
+        <motion.img variants={photoAnim} src={home1} alt="guy with camera" />
       </StyledImage>
     </StyledAbout>
   );

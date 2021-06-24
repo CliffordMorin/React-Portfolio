@@ -10,6 +10,7 @@ import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 //Router
 import { Switch, Route, useLocation } from "react-router-dom";
+//hashRouter conditional rendering
 //Animation
 import { AnimatePresence } from "framer-motion";
 

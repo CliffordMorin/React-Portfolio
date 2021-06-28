@@ -3,13 +3,14 @@ import React from "react";
 import AboutSection from "../components/AboutSection";
 import ServicesSection from "../components/ServicesSection.js";
 import FaqSection from "../components/FaqSection.js";
+import AboutMeSection from "../components/AboutMeSection";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 //Scroll
 import ScrollTop from "../components/ScrollTop";
 
-const AboutUs = () => {
+const About = () => {
   return (
     <motion.div
       exit="exit"
@@ -18,6 +19,7 @@ const AboutUs = () => {
       animate="show"
     >
       <AboutSection />
+      <AboutMeSection />
       <ServicesSection />
       <FaqSection />
       <ScrollTop />
@@ -25,4 +27,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default About;

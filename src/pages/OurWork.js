@@ -36,7 +36,7 @@ const OurWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <StyledMovie>
+      <StyledProject>
         <motion.h2 variants={fadeAnim}>The Athlete</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
@@ -44,8 +44,8 @@ const OurWork = () => {
             <motion.img variants={photoAnim} src={athlete} alt="athlete" />
           </Hide>
         </Link>
-      </StyledMovie>
-      <StyledMovie
+      </StyledProject>
+      <StyledProject
         ref={element}
         variants={fadeAnim}
         animate={controls}
@@ -56,8 +56,8 @@ const OurWork = () => {
         <Link to="/work/the-racer">
           <img src={theracer} alt="theracer" />
         </Link>
-      </StyledMovie>
-      <StyledMovie
+      </StyledProject>
+      <StyledProject
         ref={element2}
         variants={fadeAnim}
         animate={controls2}
@@ -68,7 +68,7 @@ const OurWork = () => {
         <Link to="/work/good-times">
           <img src={goodtimes} alt="good-times" />
         </Link>
-      </StyledMovie>
+      </StyledProject>
       <ScrollTop />
     </StyledWork>
   );
@@ -86,7 +86,7 @@ const StyledWork = styled(motion.div)`
   }
 `;
 
-const StyledMovie = styled(motion.div)`
+const StyledProject = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;

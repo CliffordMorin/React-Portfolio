@@ -1,28 +1,30 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { MovieState } from "../movieState";
+import { ProjectState } from "../projectState";
 //Animation
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 //Scroll
 import ScrollTop from "../components/ScrollTop";
 
-const MovieDetail = () => {
+const ProjectDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [movies, setMovies] = useState(MovieState);
-  const [movie, setMovie] = useState(null);
+  const [projects, setProjects] = useState(ProjectState);
+  const [project, setProject] = useState(null);
 
   //useEffect
   useEffect(() => {
-    const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
-    setMovie(currentMovie[0]);
-  }, [movies, url]);
+    const currentProject = projects.filter(
+      (stateProject) => stateProject.url === url
+    );
+    setProject(currentProject[0]);
+  }, [projects, url]);
 
   return (
     <>
-      {movie && (
+      {project && (
         <StyledDetails
           variants={pageAnimation}
           exit="exit"
@@ -30,20 +32,20 @@ const MovieDetail = () => {
           animate="show"
         >
           <StyledHeadline>
-            <h2>{movie.title}</h2>
-            <img src={movie.mainImg} alt={movie.title} />
+            <h2>{project.title}</h2>
+            <img src={project.mainImg} alt={project.title} />
           </StyledHeadline>
-          <StyledAwards>
-            {movie.awards.map((award) => (
-              <Award
-                title={award.title}
-                description={award.description}
-                key={award.title}
+          <StyledBlurbs>
+            {project.blurbs.map((blurb) => (
+              <Blurb
+                title={blurb.title}
+                description={blurb.description}
+                key={blurb.title}
               />
             ))}
-          </StyledAwards>
+          </StyledBlurbs>
           <ImageDisplay>
-            <img src={movie.secondaryImg} alt="movie" />
+            <img src={project.secondaryImg} alt="project" />
           </ImageDisplay>
           <ScrollTop />
         </StyledDetails>
@@ -71,7 +73,7 @@ const StyledHeadline = styled.div`
     object-fit: cover;
   }
 `;
-const StyledAwards = styled.div`
+const StyledBlurbs = styled.div`
   min-height: 80vh;
   display: flex;
   margin: 5rem 10rem;
@@ -83,7 +85,7 @@ const StyledAwards = styled.div`
   }
 `;
 
-const StyledAward = styled.div`
+const StyledBlurb = styled.div`
   font-size: 5rem;
   h3 {
     font-size: 2rem;
@@ -107,15 +109,15 @@ const ImageDisplay = styled.div`
     object-fit: cover;
   }
 `;
-//Award Component
-const Award = ({ title, description }) => {
+//Blurb Component
+const Blurb = ({ title, description }) => {
   return (
-    <StyledAward>
+    <StyledBlurb>
       <h3>{title}</h3>
       <div className="line"></div>
       <p>{description}</p>
-    </StyledAward>
+    </StyledBlurb>
   );
 };
 
-export default MovieDetail;
+export default ProjectDetail;

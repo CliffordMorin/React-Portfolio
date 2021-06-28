@@ -7,7 +7,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import Nav from "./components/Nav";
-import MovieDetail from "./pages/MovieDetail";
+import ProjectDetail from "./pages/ProjectDetail";
 //Router
 import { Switch, Route, useLocation } from "react-router-dom";
 //hashRouter conditional rendering
@@ -30,7 +30,7 @@ function App() {
             <OurWork />
           </Route>
           <Route path="/work/:id">
-            <MovieDetail />
+            <ProjectDetail />
           </Route>
           <Route path="/contact" exact>
             <ContactUs />

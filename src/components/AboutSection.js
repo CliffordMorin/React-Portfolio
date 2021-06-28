@@ -13,6 +13,8 @@ import { motion } from "framer-motion";
 //Animation
 import { fadeAnim, titleAnim, photoAnim } from "../animation";
 import Wave from "./Wave";
+//Typing text
+import TypedHook from "../components/TypedHook";
 
 const AboutSection = () => {
   return (
@@ -28,7 +30,9 @@ const AboutSection = () => {
             </motion.h2>
           </StyledHide>
           <StyledHide>
-            <motion.h2 variants={titleAnim}>and I am a</motion.h2>
+            <motion.h2 variants={titleAnim}>
+              and I am a <TypedHook />
+            </motion.h2>
           </StyledHide>
         </motion.div>
         <motion.p variants={fadeAnim}>

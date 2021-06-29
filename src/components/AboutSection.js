@@ -1,5 +1,6 @@
 import React from "react";
 import home1 from "../img/home1.png";
+import { Link } from "react-router-dom";
 //Styled
 // import styled from "styled-components";
 import {
@@ -36,10 +37,12 @@ const AboutSection = () => {
           </StyledHide>
         </motion.div>
         <motion.p variants={fadeAnim}>
-          Contact us for sny photography or videography idea that you have.. We
-          have pro's with amazing skills.
+          Take a Scroll through my Portfolio Website. Go to "My Work" to see
+          what my recent projects have been. Enjoy!
         </motion.p>
-        <motion.button variants={fadeAnim}>Contact us</motion.button>
+        <Link to="/contact">
+          <motion.button variants={fadeAnim}>Contact us</motion.button>
+        </Link>
       </StyledDescription>
       <StyledImage>
         <motion.img variants={photoAnim} src={home1} alt="guy with camera" />

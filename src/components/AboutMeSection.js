@@ -1,12 +1,15 @@
 import React from "react";
 //Import Icons
 import home2 from "../img/home2.png";
+import CodingResume2021 from "../Resume/Coding-Resume-2021.pdf";
 //Style
 import styled from "styled-components";
-import { StyledAbout, StyledDescription, StyledImage } from "../styles";
+import { StyledAbout, StyledImage, StyledDescription } from "../styles";
 //Scroll
 import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+import { scrollReveal, fadeAnim } from "../animation";
+//Animation
+import { motion } from "framer-motion";
 
 const AboutMeSection = () => {
   const [element, controls] = useScroll();
@@ -17,15 +20,37 @@ const AboutMeSection = () => {
       initial="hidden"
       ref={element}
     >
+      <StyledDescription>
+        <h2>
+          About <span> Me </span>
+        </h2>
+        <StyledCards>
+          <p>
+            Hello! I am Clifford Morin, and welcome to my portfolio webpage! I
+            am currently attending a six month coding bootcamp at Rutgers
+            University in order to learn how to become a full-stack
+            web-developer and designer. Through recieving a Bachelor's and a
+            Master's in Jazz Performance for Saxophone, as well as having a
+            successful full time performing career, I have obtained a certain
+            skill set that I can apply to my software engineering skills. In my
+            career I hope to be able to combine both of my passions to work with
+            and create new forms of music software. When I am not coding you can
+            find me on bandstand's across the world performing with world class
+            musicians!
+          </p>
+          <a
+            href={CodingResume2021}
+            target="_blank"
+            download="Coding-Resume-2021.pdf"
+            rel="noreferrer"
+          >
+            <motion.button variants={fadeAnim}>Download Resume</motion.button>
+          </a>
+        </StyledCards>
+      </StyledDescription>
       <StyledImage>
         <img src={home2} alt="home 2" />
       </StyledImage>
-      <StyledDescription>
-        <h2>
-          High <span> AboutMe </span>
-        </h2>
-        <StyledCards></StyledCards>
-      </StyledDescription>
     </StyledAboutMe>
   );
 };
@@ -35,8 +60,9 @@ const StyledAboutMe = styled(StyledAbout)`
     padding-bottom: 5rem;
   }
   p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
+    width: 90%;
+    padding: 0rem 0rem 4rem 0rem;
+    font-size: 2rem;
   }
 `;
 const StyledCards = styled.div`

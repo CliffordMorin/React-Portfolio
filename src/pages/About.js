@@ -1,7 +1,7 @@
 import React from "react";
 //Page Components
 import AboutSection from "../components/AboutSection";
-import ServicesSection from "../components/ServicesSection.js";
+import SkillsSection from "../components/SkillsSection.js";
 import FaqSection from "../components/FaqSection.js";
 import AboutMeSection from "../components/AboutMeSection";
 //Animations
@@ -20,7 +20,7 @@ const About = () => {
     >
       <AboutSection />
       <AboutMeSection />
-      <ServicesSection />
+      <SkillsSection />
       <FaqSection />
       <ScrollTop />
     </motion.div>

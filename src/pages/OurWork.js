@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import athlete from "../img/athlete-small.png";
+import pokemonGif from "../img/pokemonGif.gif";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 //Animation
@@ -37,11 +37,15 @@ const OurWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <StyledProject>
-        <motion.h2 variants={fadeAnim}>The Athlete</motion.h2>
+        <motion.h2 variants={fadeAnim}>Pokemon TCG APP</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+            <motion.img
+              variants={photoAnim}
+              src={pokemonGif}
+              alt="pokemonGif"
+            />
           </Hide>
         </Link>
       </StyledProject>

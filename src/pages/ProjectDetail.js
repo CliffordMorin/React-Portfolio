@@ -87,6 +87,10 @@ const StyledBlurbs = styled.div`
 
 const StyledBlurb = styled.div`
   font-size: 5rem;
+  width: 25%;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
   h3 {
     font-size: 2rem;
   }

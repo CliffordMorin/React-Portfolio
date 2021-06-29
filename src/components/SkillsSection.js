@@ -41,7 +41,6 @@ const SkillsSection = () => {
             <div className="icon">
               <FontAwesomeIcon icon={faHtml5} color="#ffa200f7" size="7x" />
             </div>
-            <p>HTML</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
@@ -51,7 +50,6 @@ const SkillsSection = () => {
                 size="7x"
               />
             </div>
-            <p>CSS</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
@@ -61,7 +59,6 @@ const SkillsSection = () => {
                 size="7x"
               />
             </div>
-            <p>JavaScript</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
@@ -71,13 +68,11 @@ const SkillsSection = () => {
                 size="7x"
               />
             </div>
-            <p>BootStrap</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
               <FontAwesomeIcon icon={faNode} color="rgb(0, 255, 8)" size="7x" />
             </div>
-            <p>Node.js</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
@@ -88,7 +83,6 @@ const SkillsSection = () => {
                 spin
               />
             </div>
-            <p>React</p>
           </StyledCard>
         </StyledCards>
       </StyledDescription>
@@ -106,10 +100,6 @@ const StyledSkills = styled(StyledAbout)`
   h3 {
     font-size: 2rem;
   }
-  p {
-    width: 50%;
-    padding: 2rem 4rem;
-  }
 `;
 const StyledCards = styled.div`
   display: flex;
@@ -124,6 +114,7 @@ const StyledCard = styled.div`
   .icon {
     display: flex;
     align-items: center;
+    padding-bottom: 3rem;
     @media (max-width: 1300px) {
       justify-content: center;
     }

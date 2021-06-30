@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim, lineAnim } from "../animation";
 import styled from "styled-components";
+import Wave2 from "../components/Wave2";
 //Scroll
 import ScrollTop from "../components/ScrollTop";
 //icons
@@ -39,6 +40,7 @@ const ContactUs = () => {
           </motion.div>
         </Hide>
       </Title>
+      <Wave2 />
       <div className="row">
         <div className="col border-right border-dark border-4">
           <Hide>
@@ -51,6 +53,7 @@ const ContactUs = () => {
               <h2>Clifford Morin</h2>
             </SocialStyle>
           </Hide>
+
           <Hide>
             <SocialStyle variants={titleAnim}>
               <FontAwesomeIcon icon={faEnvelopeSquare} size="3x" color="Grey" />
@@ -128,6 +131,7 @@ const ContactUs = () => {
           </Hide>
         </div>
       </div>
+
       <ScrollTop />
     </ContactStyle>
   );
@@ -185,6 +189,7 @@ const SocialStyle = styled(motion.div)`
   }
   a {
     color: Black;
+    z-index: 10;
   }
 `;
 

@@ -8,6 +8,7 @@ import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import Nav from "./components/Nav";
 import ProjectDetail from "./pages/ProjectDetail";
+import Footer from "./components/Footer";
 //Router
 import { Switch, Route, useLocation } from "react-router-dom";
 //hashRouter conditional rendering
@@ -37,6 +38,7 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

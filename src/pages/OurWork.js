@@ -3,8 +3,10 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
 import pokemonGif from "../img/pokemonGif.gif";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import movie from "../img/movie.png";
+import budgetGif from "../img/BudgetGif.gif";
+import tech1 from "../img/tech1.png";
+import workout1 from "../img/workout1.png";
 //Animation
 import { motion } from "framer-motion";
 import {
@@ -22,6 +24,8 @@ import ScrollTop from "../components/ScrollTop";
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
+  const [element4, controls4] = useScroll();
   return (
     <StyledWork
       variants={pageAnimation}
@@ -39,7 +43,7 @@ const OurWork = () => {
       <StyledProject>
         <motion.h2 variants={fadeAnim}>Pokemon TCG APP</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-athlete">
+        <Link to="/work/pokemon-TCG-app">
           <Hide>
             <motion.img
               variants={photoAnim}
@@ -55,10 +59,10 @@ const OurWork = () => {
         animate={controls}
         initial="hidden"
       >
-        <h2>The Racer</h2>
+        <h2>Movie Soundtrack Generator</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
+        <Link to="/work/movie-soundtrack-generator">
+          <img src={movie} alt="movie" />
         </Link>
       </StyledProject>
       <StyledProject
@@ -67,10 +71,34 @@ const OurWork = () => {
         animate={controls2}
         initial="hidden"
       >
-        <h2>Good Times</h2>
+        <h2>Budget Tracker</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/good-times">
-          <img src={goodtimes} alt="good-times" />
+        <Link to="/work/budget-tracker">
+          <img src={budgetGif} alt="budgetGif" />
+        </Link>
+      </StyledProject>
+      <StyledProject
+        ref={element3}
+        variants={fadeAnim}
+        animate={controls3}
+        initial="hidden"
+      >
+        <h2>Fitness Tracker</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/fitness-tracker">
+          <img src={workout1} alt="workout1" />
+        </Link>
+      </StyledProject>
+      <StyledProject
+        ref={element4}
+        variants={fadeAnim}
+        animate={controls4}
+        initial="hidden"
+      >
+        <h2>Tech Blog</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/tech-blog">
+          <img src={tech1} alt="tech1" />
         </Link>
       </StyledProject>
       <ScrollTop />
@@ -100,7 +128,7 @@ const StyledProject = styled(motion.div)`
   img {
     width: 100%;
     height: 70vh;
-    object-fit: cover;
+    object-fit: contain;
   }
 `;
 

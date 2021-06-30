@@ -5,7 +5,7 @@ import GlobalStyle from "./components/GlobalStyle";
 //Import Pages
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
-import OurWork from "./pages/OurWork";
+import MyWork from "./pages/MyWork";
 import Nav from "./components/Nav";
 import ProjectDetail from "./pages/ProjectDetail";
 import Footer from "./components/Footer";
@@ -28,7 +28,7 @@ function App() {
             <About />
           </Route>
           <Route path="/work" exact>
-            <OurWork />
+            <MyWork />
           </Route>
           <Route path="/work/:id">
             <ProjectDetail />

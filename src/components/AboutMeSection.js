@@ -7,7 +7,7 @@ import styled from "styled-components";
 import { StyledAbout, StyledImage, StyledDescription } from "../styles";
 //Scroll
 import { useScroll } from "./useScroll";
-import { scrollReveal, fadeAnim } from "../animation";
+import { scrollReveal, fadeAnim, lineAnim } from "../animation";
 //Animation
 import { motion } from "framer-motion";
 
@@ -24,6 +24,7 @@ const AboutMeSection = () => {
         <h2>
           About <span> Me </span>
         </h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <StyledCards>
           <p>
             Hello! I am Clifford Morin, and welcome to my portfolio webpage! I
@@ -56,13 +57,15 @@ const AboutMeSection = () => {
 };
 
 const StyledAboutMe = styled(StyledAbout)`
-  h2 {
-    padding-bottom: 5rem;
-  }
   p {
     width: 90%;
     padding: 0rem 0rem 4rem 0rem;
     font-size: 2rem;
+  }
+  .line {
+    height: 0.5rem;
+    background: #23d997;
+    margin-bottom: 3rem;
   }
 `;
 const StyledCards = styled.div`

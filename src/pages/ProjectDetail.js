@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { ProjectState } from "../projectState";
 //Animation
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation, lineAnim } from "../animation";
 //Scroll
 import ScrollTop from "../components/ScrollTop";
 
@@ -33,6 +33,7 @@ const ProjectDetail = () => {
         >
           <StyledHeadline>
             <h2>{project.title}</h2>
+            <motion.div variants={lineAnim} className="line"></motion.div>
             <img src={project.mainImg} alt={project.title} />
           </StyledHeadline>
           <StyledBlurbs>
@@ -56,20 +57,38 @@ const ProjectDetail = () => {
 
 const StyledDetails = styled(motion.div)`
   color: white;
+  .line {
+    width: 75%;
+    background: #23d997;
+    height: 0.5rem;
+    margin: 2rem 0rem;
+  }
 `;
 const StyledHeadline = styled.div`
   min-height: 90vh;
   padding-top: 20vh;
   position: relative;
+  @media (max-width: 1300px) {
+    min-height: 0;
+    padding-top: 20%;
+    height: 25%;
+  }
   h2 {
     position: absolute;
+    font-size: 4rem;
+    font-family: "Inter";
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
+    @media (max-width: 1300px) {
+      font-size: 40px;
+      width: 75%;
+      text-align: center;
+    }
   }
   img {
     width: 100%;
-    height: 70vh;
+    height: 20%;
     object-fit: contain;
   }
 `;
@@ -94,23 +113,21 @@ const StyledBlurb = styled.div`
   h3 {
     font-size: 2rem;
   }
-  .line {
-    width: 75%;
-    background: #23d997;
-    height: 0.5rem;
-    margin: 1rem 0rem;
-  }
+
   p {
     padding: 2rem 0rem;
   }
 `;
 
 const ImageDisplay = styled.div`
-  min-height: 50vh;
+  min-height: 20%;
   img {
     width: 100%;
     height: 100vh;
     object-fit: contain;
+    @media (max-width: 1300px) {
+      height: 25%;
+    }
   }
 `;
 //Blurb Component

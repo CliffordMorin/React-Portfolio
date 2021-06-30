@@ -41,7 +41,7 @@ const AboutSection = () => {
           what my recent projects have been. Enjoy!
         </motion.p>
         <Link to="/contact">
-          <motion.button variants={fadeAnim}>Contact us</motion.button>
+          <motion.button variants={fadeAnim}>Contact Me</motion.button>
         </Link>
       </StyledDescription>
       <StyledImage>

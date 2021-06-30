@@ -141,7 +141,7 @@ const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: #3300ff;
+  background-color: #272727;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
@@ -155,7 +155,7 @@ const StyledFooter = styled.footer`
     margin: 20px 0;
   }
   h5 {
-    color: #fff;
+    color: #22c68b;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 5px;

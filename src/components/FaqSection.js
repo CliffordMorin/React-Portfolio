@@ -19,16 +19,54 @@ const FaqSection = () => {
       initial="hidden"
     >
       <h2>
-        Any Questions <span>FAQ</span>
+        Common Interview Questions <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
         <Toggle title="What is your favorite language and why?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Sapiente, quisquam.
+              I personally am 100% open to learning any language. I enjoy the
+              process of learning new languages. I believe this is something I
+              learned from studying music. Similar to coding, music also has
+              many different language's, and if you only focus on one language
+              it really puts a barrier on you and what kind of projects you can
+              create.
             </p>
+            <p>
+              By nature language's are constantly changing therefore a
+              web-developer has to be constantly aware and studying new
+              language's. Although, Currently I am having a ton of fun studying
+              and creating applications with React and Javascript.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What are your preferences on location for working?">
+          <div className="answer">
+            <p>
+              I currently live in Phildelphia, PA. I would prefer a remote job.
+              Although, I am open to working in or around Philadelphia PA,
+              Princeton NJ or New York City area for work.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What are the most important qualities that a Full Stack Developer must have?">
+          <div className="answer">
+            <p>I believe a Full Stack Developer should......</p>
+            <ul>
+              <li>
+                Be open to learning any language or technology that is needed to
+                complete a project.
+              </li>
+              <li>Be an independent problem solver.</li>
+              <li>Have good social skills in order to work with a team.</li>
+              <li>Have experience working with a team.</li>
+              <li>Know how to use google and never give up.</li>
+              <li>Have efficient typing skills.</li>
+              <li>
+                Have another activity/ passion that they enjoy doing, in order
+                to keep a fresh and healthy mind when coding.
+              </li>
+            </ul>
           </div>
         </Toggle>
         <Toggle title="What are the Success Factors for Successive Integration?">
@@ -44,29 +82,6 @@ const FaqSection = () => {
               <li>Make it easy to get the latest deliverables</li>
               <li>Automate deployment</li>
             </ol>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Expedita, necessitatibus!
-            </p>
-          </div>
-        </Toggle>
-        <Toggle title="Different Payment Methods">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Sapiente, quisquam.
-            </p>
-          </div>
-        </Toggle>
-        <Toggle title="What products do you offer?">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Sapiente, quisquam.
-            </p>
           </div>
         </Toggle>
       </AnimateSharedLayout>
@@ -92,14 +107,19 @@ const StyledFaq = styled(StyledAbout)`
   .question {
     padding: 3rem 0rem;
     cursor: pointer;
+    h4 {
+      color: #22c68b;
+    }
   }
   .answer {
     padding: 2rem 0rem;
     p {
       padding: 1rem 0rem;
+      font-size: 1.5rem;
     }
     li {
       padding: 0.5rem 1rem;
+      font-size: 1.5rem;
     }
     ol {
       padding: 0.5rem 3rem;

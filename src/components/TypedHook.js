@@ -25,11 +25,14 @@ const TypedHook = () => {
   React.useEffect(() => {
     const options = {
       strings: [
+        "Web-Developer",
+        "Web-Designer",
+        "Full-Stack Developer",
+        "Front-end Developer",
+        "Back-end Developer",
         "Professional Musician",
         "Saxophonist",
         "Multi-Instrumentalist",
-        "Web-Developer",
-        "Web-Designer",
       ],
       typeSpeed: 100,
       backSpeed: 60,

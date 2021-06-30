@@ -19,6 +19,9 @@ import { useScroll } from "./useScroll";
 import { scrollReveal } from "../animation";
 //TypedHook2
 import TypedHook2 from "../components/TypedHook2";
+//Animations
+import { motion } from "framer-motion";
+import { lineAnim } from "../animation";
 
 const SkillsSection = () => {
   const [element, controls] = useScroll();
@@ -33,6 +36,7 @@ const SkillsSection = () => {
         <h2>
           My <span> Skills </span>
         </h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <h3>
           Some of my skills include... <TypedHook2 />
         </h3>
@@ -94,11 +98,13 @@ const SkillsSection = () => {
 };
 
 const StyledSkills = styled(StyledAbout)`
-  h2 {
-    padding-bottom: 3rem;
-  }
   h3 {
     font-size: 2rem;
+  }
+  .line {
+    height: 0.5rem;
+    background: #23d997;
+    margin-bottom: 5rem;
   }
 `;
 const StyledCards = styled.div`

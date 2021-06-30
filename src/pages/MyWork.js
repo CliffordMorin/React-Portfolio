@@ -21,7 +21,7 @@ import {
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
-const OurWork = () => {
+const MyWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
@@ -115,6 +115,9 @@ const StyledWork = styled(motion.div)`
   }
   h2 {
     padding: 1rem 0rem;
+    @media (max-width: 1300px) {
+      font-size: 3rem;
+    }
   }
 `;
 
@@ -127,8 +130,14 @@ const StyledProject = styled(motion.div)`
   }
   img {
     width: 100%;
-    height: 70vh;
+    height: 20%;
     object-fit: contain;
+  }
+  img:hover {
+    box-shadow: inset 0px 0px 50px #23d997, 0 0 35px #23d997;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
   }
 `;
 
@@ -159,4 +168,4 @@ const Frame4 = styled(Frame1)`
   background: #8effa0;
 `;
 
-export default OurWork;
+export default MyWork;

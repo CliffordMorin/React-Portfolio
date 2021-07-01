@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.js": "/React-Portfolio/static/js/main.6bc258bc.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.6bc258bc.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/React-Portfolio/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.c56198b8.chunk.js": "/React-Portfolio/static/js/2.c56198b8.chunk.js",
+    "static/js/2.c56198b8.chunk.js.map": "/React-Portfolio/static/js/2.c56198b8.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/React-Portfolio/static/css/2.4c97ca4f.chunk.css.map",
+    "static/js/2.c56198b8.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.c56198b8.chunk.js.LICENSE.txt",
+    "static/media/BudgetGif.8bf72185.gif": "/React-Portfolio/static/media/BudgetGif.8bf72185.gif",
+    "static/media/Coding-Resume-2021.05b28a68.pdf": "/React-Portfolio/static/media/Coding-Resume-2021.05b28a68.pdf",
+    "static/media/home1.70daf655.png": "/React-Portfolio/static/media/home1.70daf655.png",
+    "static/media/home2.359eda5f.png": "/React-Portfolio/static/media/home2.359eda5f.png",
+    "static/media/home3.c1f61011.png": "/React-Portfolio/static/media/home3.c1f61011.png",
+    "static/media/movie.c0f4fa1e.png": "/React-Portfolio/static/media/movie.c0f4fa1e.png",
+    "static/media/pokemonCards.f7b6c3c8.png": "/React-Portfolio/static/media/pokemonCards.f7b6c3c8.png",
+    "static/media/pokemonGif.8abbd4c6.gif": "/React-Portfolio/static/media/pokemonGif.8abbd4c6.gif",
+    "static/media/pokemonHome.50716fb4.png": "/React-Portfolio/static/media/pokemonHome.50716fb4.png",
+    "static/media/tech1.9dba0205.png": "/React-Portfolio/static/media/tech1.9dba0205.png",
+    "static/media/tech2.c63bd418.png": "/React-Portfolio/static/media/tech2.c63bd418.png",
+    "static/media/tech3.6482cd2a.png": "/React-Portfolio/static/media/tech3.6482cd2a.png",
+    "static/media/workout.de980516.png": "/React-Portfolio/static/media/workout.de980516.png",
+    "static/media/workout1.15012315.png": "/React-Portfolio/static/media/workout1.15012315.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e19d3e9.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.c56198b8.chunk.js",
+    "static/js/main.6bc258bc.chunk.js"
+  ]
+}

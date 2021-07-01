@@ -2,16 +2,18 @@
 
 </br>
 <p align="center">
-    <img src="https://img.shields.io/github/languages/count/CliffordMorin/Employee-Directory?style=plastic" alt="Languages" />
-    <img src="https://img.shields.io/github/languages/top/CliffordMorin/Employee-Directory?style=plastic&labelColor=yellow" alt="Top Language" />
-    <img src="https://img.shields.io/github/languages/code-size/CliffordMorin/Employee-Directory?style=plastic" alt="Code Size" />
-    <img src="https://img.shields.io/github/repo-size/CliffordMorin/Employee-Directory?style=plastic" alt="Repo Size" />   
-    <img src="https://img.shields.io/tokei/lines/github/CliffordMorin/Employee-Directory?style=plastic" alt="Total Lines" />
-    <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/Employee-Directory/react?style=plastic" alt="React Version" />
-    <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/Employee-Directory/bootstrap?style=plastic" alt="bootstrap Version" />
-    <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/Employee-Directory/axios?style=plastic" alt="axios Version" />
-    <img src="https://img.shields.io/github/last-commit/CliffordMorin/Employee-Directory?style=plastic" alt="Last Commit" />  
-    <img src="https://img.shields.io/github/issues/CliffordMorin/Employee-Directory?style=plastic" alt="Issues" />  
+    <img src="https://img.shields.io/github/languages/count/CliffordMorin/React-Portfolio?style=plastic" alt="Languages" />
+    <img src="https://img.shields.io/github/languages/top/CliffordMorin/React-Portfolio?style=plastic&labelColor=yellow" alt="Top Language" />
+    <img src="https://img.shields.io/github/languages/code-size/CliffordMorin/React-Portfolio?style=plastic" alt="Code Size" />
+    <img src="https://img.shields.io/github/repo-size/CliffordMorin/React-Portfolio?style=plastic" alt="Repo Size" />   
+    <img src="https://img.shields.io/tokei/lines/github/CliffordMorin/React-Portfolio?style=plastic" alt="Total Lines" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/React-Portfolio/react?style=plastic" alt="React Version" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/React-Portfolio/react-bootstrap?style=plastic" alt="React bootstrap Version" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/React-Portfolio/styled-components?style=plastic" alt="Styled-components Version" />
+     <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/React-Portfolio/react-router-dom?style=plastic" alt="react-router-dom Version" />
+      <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/React-Portfolio/framer-motion?style=plastic" alt="framer-motion Version" />
+    <img src="https://img.shields.io/github/last-commit/CliffordMorin/React-Portfolio?style=plastic" alt="Last Commit" />  
+    <img src="https://img.shields.io/github/issues/CliffordMorin/React-Portfolio?style=plastic" alt="Issues" />  
     <img src="https://img.shields.io/github/followers/CliffordMorin?style=social" alt="Followers" />  
 </p>
 
@@ -50,7 +52,7 @@ As a Job-Recruiter I want to view a slick, mobile first portfolio website where 
 
 ## Links
 
-- GH-Pages demo site link: ()
+- GH-Pages demo site link: (https://cliffordmorin.github.io/React-Portfolio/)
 - Github Repository URL: (https://github.com/CliffordMorin/React-Portfolio)
 
 ## Technologies Used

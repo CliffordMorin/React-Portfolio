@@ -45,7 +45,11 @@ const AboutSection = () => {
         </Link>
       </StyledDescription>
       <StyledImage>
-        <motion.img variants={photoAnim} src={home1} alt="guy with camera" />
+        <motion.img
+          variants={photoAnim}
+          src={home1}
+          alt="Cliff with a saxophone"
+        />
       </StyledImage>
       <Wave />
     </StyledAbout>

@@ -1,109 +1,90 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 //Images
-import pokemonGif from "../img/pokemonGif.gif";
-import movie from "../img/movie.png";
-import budgetGif from "../img/BudgetGif.gif";
-import tech1 from "../img/tech1.png";
-import workout1 from "../img/workout1.png";
+import pokemonGif from '../img/pokemonGif.gif';
+import movie from '../img/movie.png';
+import budgetGif from '../img/BudgetGif.gif';
+import tech1 from '../img/tech1.png';
+import workout1 from '../img/workout1.png';
+import mars1 from '../img/mars1.png';
+import musicPlayerLibrary from '../img/music2.png';
 //Animation
-import { motion } from "framer-motion";
-import {
-  pageAnimation,
-  fadeAnim,
-  photoAnim,
-  lineAnim,
-  slider,
-  sliderContainer,
-} from "../animation";
+import { motion } from 'framer-motion';
+import { pageAnimation, fadeAnim, photoAnim, lineAnim, slider, sliderContainer } from '../animation';
 //Scroll
-import { useScroll } from "../components/useScroll";
-import ScrollTop from "../components/ScrollTop";
+import { useScroll } from '../components/useScroll';
+import ScrollTop from '../components/ScrollTop';
 
 const MyWork = () => {
-  const [element, controls] = useScroll();
-  const [element2, controls2] = useScroll();
-  const [element3, controls3] = useScroll();
-  const [element4, controls4] = useScroll();
-  return (
-    <StyledWork
-      variants={pageAnimation}
-      exit="exit"
-      initial="hidden"
-      animate="show"
-      style={{ background: "#fff" }}
-    >
-      <motion.div variants={sliderContainer}>
-        <Frame1 variants={slider}></Frame1>
-        <Frame2 variants={slider}></Frame2>
-        <Frame3 variants={slider}></Frame3>
-        <Frame4 variants={slider}></Frame4>
-      </motion.div>
-      <StyledProject>
-        <motion.h2 variants={fadeAnim}>Pokemon TCG APP</motion.h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/pokemon-TCG-app">
-          <Hide>
-            <motion.img
-              variants={photoAnim}
-              src={pokemonGif}
-              alt="pokemonGif"
-            />
-          </Hide>
-        </Link>
-      </StyledProject>
-      <StyledProject
-        ref={element}
-        variants={fadeAnim}
-        animate={controls}
-        initial="hidden"
-      >
-        <h2>Movie Soundtrack Generator</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/movie-soundtrack-generator">
-          <img src={movie} alt="movie" />
-        </Link>
-      </StyledProject>
-      <StyledProject
-        ref={element2}
-        variants={fadeAnim}
-        animate={controls2}
-        initial="hidden"
-      >
-        <h2>Budget Tracker</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/budget-tracker">
-          <img src={budgetGif} alt="budgetGif" />
-        </Link>
-      </StyledProject>
-      <StyledProject
-        ref={element3}
-        variants={fadeAnim}
-        animate={controls3}
-        initial="hidden"
-      >
-        <h2>Fitness Tracker</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/fitness-tracker">
-          <img src={workout1} alt="workout1" />
-        </Link>
-      </StyledProject>
-      <StyledProject
-        ref={element4}
-        variants={fadeAnim}
-        animate={controls4}
-        initial="hidden"
-      >
-        <h2>Tech Blog</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/tech-blog">
-          <img src={tech1} alt="tech1" />
-        </Link>
-      </StyledProject>
-      <ScrollTop />
-    </StyledWork>
-  );
+	const [ element, controls ] = useScroll();
+	const [ element2, controls2 ] = useScroll();
+	const [ element3, controls3 ] = useScroll();
+	const [ element4, controls4 ] = useScroll();
+	const [ element5, controls5 ] = useScroll();
+	const [ element6, controls6 ] = useScroll();
+	return (
+		<StyledWork variants={pageAnimation} exit="exit" initial="hidden" animate="show" style={{ background: '#fff' }}>
+			<motion.div variants={sliderContainer}>
+				<Frame1 variants={slider} />
+				<Frame2 variants={slider} />
+				<Frame3 variants={slider} />
+				<Frame4 variants={slider} />
+			</motion.div>
+			<StyledProject>
+				<motion.h2 variants={fadeAnim}>Mars Travel Agency</motion.h2>
+				<motion.div variants={lineAnim} className="line" />
+				<Link to="/work/MTA">
+					<Hide>
+						<motion.img variants={photoAnim} src={mars1} alt="mars1" />
+					</Hide>
+				</Link>
+			</StyledProject>
+			<StyledProject ref={element} variants={fadeAnim} animate={controls} initial="hidden">
+				<h2>Pokemon APP</h2>
+				<motion.div variants={lineAnim} className="line" />
+				<Link to="/work/pokemon-TCG-app">
+					<img src={pokemonGif} alt="pokemonGif" />
+				</Link>
+			</StyledProject>
+			<StyledProject ref={element2} variants={fadeAnim} animate={controls2} initial="hidden">
+				<h2>Music Player</h2>
+				<motion.div variants={lineAnim} className="line" />
+				<Link to="/work/music-player-app">
+					<img src={musicPlayerLibrary} alt="musicPlayerLibrary" />
+				</Link>
+			</StyledProject>
+			<StyledProject ref={element3} variants={fadeAnim} animate={controls3} initial="hidden">
+				<h2>MSG App</h2>
+				<motion.div variants={lineAnim} className="line" />
+				<Link to="/work/movie-soundtrack-generator">
+					<img src={movie} alt="movie" />
+				</Link>
+			</StyledProject>
+			<StyledProject ref={element4} variants={fadeAnim} animate={controls4} initial="hidden">
+				<h2>Budget Tracker</h2>
+				<motion.div variants={lineAnim} className="line" />
+				<Link to="/work/budget-tracker">
+					<img src={budgetGif} alt="budgetGif" />
+				</Link>
+			</StyledProject>
+			<StyledProject ref={element5} variants={fadeAnim} animate={controls5} initial="hidden">
+				<h2>Fitness Tracker</h2>
+				<motion.div variants={lineAnim} className="line" />
+				<Link to="/work/fitness-tracker">
+					<img src={workout1} alt="workout1" />
+				</Link>
+			</StyledProject>
+			<StyledProject ref={element6} variants={fadeAnim} animate={controls6} initial="hidden">
+				<h2>Tech Blog</h2>
+				<motion.div variants={lineAnim} className="line" />
+				<Link to="/work/tech-blog">
+					<img src={tech1} alt="tech1" />
+				</Link>
+			</StyledProject>
+			<ScrollTop />
+		</StyledWork>
+	);
 };
 
 const StyledWork = styled(motion.div)`
@@ -141,9 +122,7 @@ const StyledProject = styled(motion.div)`
   }
 `;
 
-const Hide = styled.div`
-  overflow: hidden;
-`;
+const Hide = styled.div`overflow: hidden;`;
 
 //Frame Animation
 const Frame1 = styled(motion.div)`

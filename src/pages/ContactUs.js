@@ -104,7 +104,7 @@ const ContactUs = () => {
 						<SocialStyle variants={titleAnim}>
 							<FontAwesomeIcon icon={faGoogleDrive} size="3x" color="Green" />
 							<a
-								href="https://drive.google.com/file/d/1Uezgn_DoQxgcFxk_mmYyGtDc7joH8Ir5/view?usp=sharing"
+								href="https://docs.google.com/document/d/1hZAGOCn0MVFChtP4tcfX4QF-AuWB8mgDuvOIAoyoxCA/edit?usp=sharing"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -149,12 +149,12 @@ const Title = styled.div`
 
 const Hide = styled.div`overflow: hidden;`;
 
-const Circle = styled.div`
-	border-radius: 50%;
-	width: 3rem;
-	height: 3rem;
-	background: #353535;
-`;
+// const Circle = styled.div`
+// 	border-radius: 50%;
+// 	width: 3rem;
+// 	height: 3rem;
+// 	background: #353535;
+// `;
 
 const SocialStyle = styled(motion.div)`
   display: flex;

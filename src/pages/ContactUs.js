@@ -104,7 +104,7 @@ const ContactUs = () => {
 						<SocialStyle variants={titleAnim}>
 							<FontAwesomeIcon icon={faGoogleDrive} size="3x" color="Green" />
 							<a
-								href="https://docs.google.com/document/d/1hZAGOCn0MVFChtP4tcfX4QF-AuWB8mgDuvOIAoyoxCA/edit?usp=sharing"
+								href="https://drive.google.com/file/d/1JdvKxgSzVMBKqaWXuag6NLgOA-bcoAkJ/view?usp=sharing"
 								target="_blank"
 								rel="noreferrer"
 							>

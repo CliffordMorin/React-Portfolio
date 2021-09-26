@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.js": "/React-Portfolio/static/js/main.5f904019.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.5f904019.chunk.js.map",
+    "main.js": "/React-Portfolio/static/js/main.27aa8e7c.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.27aa8e7c.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/React-Portfolio/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.c56198b8.chunk.js": "/React-Portfolio/static/js/2.c56198b8.chunk.js",
-    "static/js/2.c56198b8.chunk.js.map": "/React-Portfolio/static/js/2.c56198b8.chunk.js.map",
+    "static/js/2.44afa1ff.chunk.js": "/React-Portfolio/static/js/2.44afa1ff.chunk.js",
+    "static/js/2.44afa1ff.chunk.js.map": "/React-Portfolio/static/js/2.44afa1ff.chunk.js.map",
     "index.html": "/React-Portfolio/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/React-Portfolio/static/css/2.4c97ca4f.chunk.css.map",
-    "static/js/2.c56198b8.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.c56198b8.chunk.js.LICENSE.txt",
+    "static/js/2.44afa1ff.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.44afa1ff.chunk.js.LICENSE.txt",
     "static/media/BudgetGif.8bf72185.gif": "/React-Portfolio/static/media/BudgetGif.8bf72185.gif",
-    "static/media/Coding-Resume-2021.05b28a68.pdf": "/React-Portfolio/static/media/Coding-Resume-2021.05b28a68.pdf",
+    "static/media/Coding-Resume-2021.d72c9a7a.pdf": "/React-Portfolio/static/media/Coding-Resume-2021.d72c9a7a.pdf",
     "static/media/home1.70daf655.png": "/React-Portfolio/static/media/home1.70daf655.png",
     "static/media/home2.359eda5f.png": "/React-Portfolio/static/media/home2.359eda5f.png",
     "static/media/home3.c1f61011.png": "/React-Portfolio/static/media/home3.c1f61011.png",
+    "static/media/mars1.20cf7309.png": "/React-Portfolio/static/media/mars1.20cf7309.png",
+    "static/media/marsBooking.15ab469a.gif": "/React-Portfolio/static/media/marsBooking.15ab469a.gif",
+    "static/media/marsHome.09cd2603.gif": "/React-Portfolio/static/media/marsHome.09cd2603.gif",
     "static/media/movie.c0f4fa1e.png": "/React-Portfolio/static/media/movie.c0f4fa1e.png",
+    "static/media/music1.e4e874fd.png": "/React-Portfolio/static/media/music1.e4e874fd.png",
+    "static/media/music2.f1c95a56.png": "/React-Portfolio/static/media/music2.f1c95a56.png",
     "static/media/pokemonCards.f7b6c3c8.png": "/React-Portfolio/static/media/pokemonCards.f7b6c3c8.png",
     "static/media/pokemonGif.8abbd4c6.gif": "/React-Portfolio/static/media/pokemonGif.8abbd4c6.gif",
     "static/media/pokemonHome.50716fb4.png": "/React-Portfolio/static/media/pokemonHome.50716fb4.png",
@@ -28,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.8e19d3e9.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.c56198b8.chunk.js",
-    "static/js/main.5f904019.chunk.js"
+    "static/js/2.44afa1ff.chunk.js",
+    "static/js/main.27aa8e7c.chunk.js"
   ]
 }

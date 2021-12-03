@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 //Images
 import pokemonGif from '../img/pokemonGif.gif';
+import pokemonHome from '../img/pokemonHome.png';
 import movie from '../img/movie.png';
 import budgetGif from '../img/BudgetGif.gif';
 import tech1 from '../img/tech1.png';
 import workout1 from '../img/workout1.png';
 import mars1 from '../img/mars1.png';
 import musicPlayerLibrary from '../img/music2.png';
+import cliffHome from '../img/cliffHome.png';
 //Animation
 import { motion } from 'framer-motion';
 import { pageAnimation, fadeAnim, photoAnim, lineAnim, slider, sliderContainer } from '../animation';
@@ -31,7 +33,7 @@ const MyWork = () => {
 				<Frame3 variants={slider} />
 				<Frame4 variants={slider} />
 			</motion.div>
-			<StyledProject>
+			{/* <StyledProject>
 				<motion.h2 variants={fadeAnim}>Mars Travel Agency</motion.h2>
 				<motion.div variants={lineAnim} className="line" />
 				<Link to="/work/MTA">
@@ -39,12 +41,21 @@ const MyWork = () => {
 						<motion.img variants={photoAnim} src={mars1} alt="mars1" />
 					</Hide>
 				</Link>
-			</StyledProject>
-			<StyledProject ref={element} variants={fadeAnim} animate={controls} initial="hidden">
-				<h2>Pokemon APP</h2>
+			</StyledProject> */}
+			<StyledProject>
+				<motion.h2 variants={fadeAnim}>Pokemon APP</motion.h2>
 				<motion.div variants={lineAnim} className="line" />
 				<Link to="/work/pokemon-TCG-app">
-					<img src={pokemonGif} alt="pokemonGif" />
+					<Hide>
+						<motion.img variants={photoAnim} src={pokemonHome} alt="pokemonGif" />
+					</Hide>
+				</Link>
+			</StyledProject>
+			<StyledProject ref={element} variants={fadeAnim} animate={controls} initial="hidden">
+				<h2> Music Website </h2>
+				<motion.div variants={lineAnim} className="line" />
+				<Link to="/work/cliff-music">
+					<img src={cliffHome} alt="cliffHome" />
 				</Link>
 			</StyledProject>
 			<StyledProject ref={element2} variants={fadeAnim} animate={controls2} initial="hidden">

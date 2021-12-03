@@ -15,6 +15,7 @@ import workout from './img/workout.png';
 import workout1 from './img/workout1.png';
 import musicPlayerHome from './img/music1.png';
 import musicPlayerLibrary from './img/music2.png';
+import cliffHome from './img/cliffHome.png';
 
 import marsHome from './img/marsHome.gif';
 import marsBooking from './img/marsBooking.gif';
@@ -46,6 +47,39 @@ export const ProjectState = () => {
 					title: 'GitHub repository',
 					description: (
 						<a href="https://github.com/thebadams/mars-travel-agency" target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faGithubSquare} size="7x" color="#23D997" />
+						</a>
+					)
+				}
+			]
+		},
+		{
+			title: 'Music Website',
+			mainImg: cliffHome,
+			secondaryImg: cliffHome,
+			url: '/work/cliff-music',
+			blurbs: [
+				{
+					title: 'Description',
+					description:
+						'This react project is a professional website page with an integrated music player that holds any music the artist would like to post.'
+				},
+				{
+					title: 'Deployed Application',
+					description: (
+						<a href="https://www.cliffordmorinmusic.com/" target="_blank" rel="noreferrer">
+							<motion.button variants={fadeAnim}>View Application</motion.button>
+						</a>
+					)
+				},
+				{
+					title: 'GitHub repository',
+					description: (
+						<a
+							href="https://github.com/CliffordMorin/Clifford-Morin-Music"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<FontAwesomeIcon icon={faGithubSquare} size="7x" color="#23D997" />
 						</a>
 					)

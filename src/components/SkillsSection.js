@@ -10,7 +10,7 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 
-import home3 from "../img/home3.png";
+import home3 from "../img/home3.jpeg";
 //Style
 import styled from "styled-components";
 import { StyledAbout, StyledDescription, StyledImage } from "../styles";

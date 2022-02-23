@@ -1,5 +1,5 @@
 import React from "react";
-import home1 from "../img/home1.png";
+import home1 from "../img/home1.jpeg";
 import { Link } from "react-router-dom";
 //Styled
 // import styled from "styled-components";

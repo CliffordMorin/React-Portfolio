@@ -1,7 +1,7 @@
 import React from "react";
 //Import Icons
-import home2 from "../img/home2.png";
-import CodingResume2021 from "../Resume/Coding-Resume-2021.pdf";
+import home2 from "../img/home2.jpeg";
+import Resume from "../Resume/resume-2022.pdf";
 //Style
 import styled from "styled-components";
 import { StyledAbout, StyledImage, StyledDescription } from "../styles";
@@ -40,9 +40,9 @@ const AboutMeSection = () => {
             musicians!
           </p>
           <a
-            href={CodingResume2021}
+            href={Resume}
             target="_blank"
-            download="Coding-Resume-2021.pdf"
+            download="resume-2022"
             rel="noreferrer"
           >
             <motion.button variants={fadeAnim}>Download Resume</motion.button>

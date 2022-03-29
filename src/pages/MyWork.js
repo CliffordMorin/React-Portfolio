@@ -12,6 +12,7 @@ import mars1 from "../img/mars1.png";
 import musicPlayerLibrary from "../img/music2.png";
 import cliffHome from "../img/cliffHome.png";
 import mindump2 from "../img/mindump2.png";
+import glenn1 from "../img/glenn1.png";
 //Animation
 import { motion } from "framer-motion";
 import {
@@ -27,6 +28,7 @@ import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
 const MyWork = () => {
+  const [element01, controls01] = useScroll();
   const [element0, controls0] = useScroll();
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
@@ -68,6 +70,18 @@ const MyWork = () => {
               alt="mindump app image"
             />
           </Hide>
+        </Link>
+      </StyledProject>
+      <StyledProject
+        ref={element01}
+        variants={fadeAnim}
+        animate={controls01}
+        initial="hidden"
+      >
+        <h2>Music Website</h2>
+        <motion.div variants={lineAnim} className="line" />
+        <Link to="/work/glenn">
+          <img src={glenn1} alt="..." />
         </Link>
       </StyledProject>
       <StyledProject

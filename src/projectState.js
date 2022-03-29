@@ -26,6 +26,8 @@ import marsBooking from "./img/marsBooking.gif";
 import tech2 from "./img/tech2.png";
 import tech3 from "./img/tech3.png";
 
+import glenn1 from "./img/glenn1.png";
+
 export const ProjectState = () => {
   return [
     {
@@ -58,6 +60,49 @@ export const ProjectState = () => {
           description: (
             <a
               href="https://github.com/thebadams/mars-travel-agency"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                size="7x"
+                color="#23D997"
+              />
+            </a>
+          ),
+        },
+      ],
+    },
+    {
+      title: "Music Website",
+      mainImg: glenn1,
+      secondaryImg: glenn1,
+      url: "/work/glenn",
+      blurbs: [
+        {
+          title: "Description",
+          description:
+            "This application is a functional professional musician website I built for a client. Some of the technologies I used are React, JS, and mainly Material-UI. The goal of this website was to build it from scratch using Material-UI to really understand how to use it effectively.",
+        },
+        {
+          title: "Deployed Application",
+          description: (
+            <a
+              href="https://musing-archimedes-c4ef25.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.button variants={fadeAnim}>
+                View Application
+              </motion.button>
+            </a>
+          ),
+        },
+        {
+          title: "GitHub repository",
+          description: (
+            <a
+              href="https://github.com/CliffordMorin/Glenn-Gifford-Website"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/React-Portfolio/static/js/main.9b8b1d5a.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.9b8b1d5a.chunk.js.map",
+    "main.js": "/React-Portfolio/static/js/main.86416430.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.86416430.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/React-Portfolio/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.a3064aec.chunk.js": "/React-Portfolio/static/js/2.a3064aec.chunk.js",
-    "static/js/2.a3064aec.chunk.js.map": "/React-Portfolio/static/js/2.a3064aec.chunk.js.map",
+    "static/js/2.0b5c83fe.chunk.js": "/React-Portfolio/static/js/2.0b5c83fe.chunk.js",
+    "static/js/2.0b5c83fe.chunk.js.map": "/React-Portfolio/static/js/2.0b5c83fe.chunk.js.map",
     "index.html": "/React-Portfolio/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/React-Portfolio/static/css/2.4c97ca4f.chunk.css.map",
-    "static/js/2.a3064aec.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.a3064aec.chunk.js.LICENSE.txt",
+    "static/js/2.0b5c83fe.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.0b5c83fe.chunk.js.LICENSE.txt",
     "static/media/BudgetGif.8bf72185.gif": "/React-Portfolio/static/media/BudgetGif.8bf72185.gif",
     "static/media/cliffHome.8bf5b414.png": "/React-Portfolio/static/media/cliffHome.8bf5b414.png",
     "static/media/glenn1.673f841a.png": "/React-Portfolio/static/media/glenn1.673f841a.png",
@@ -28,6 +28,7 @@
     "static/media/pokemonCards.2872f654.png": "/React-Portfolio/static/media/pokemonCards.2872f654.png",
     "static/media/pokemonGif.8abbd4c6.gif": "/React-Portfolio/static/media/pokemonGif.8abbd4c6.gif",
     "static/media/pokemonHome.7dab5243.png": "/React-Portfolio/static/media/pokemonHome.7dab5243.png",
+    "static/media/qoute-quiz.d0584ab3.png": "/React-Portfolio/static/media/qoute-quiz.d0584ab3.png",
     "static/media/resume-2022.73cddabb.pdf": "/React-Portfolio/static/media/resume-2022.73cddabb.pdf",
     "static/media/tech1.90f8a292.png": "/React-Portfolio/static/media/tech1.90f8a292.png",
     "static/media/tech2.640faf59.png": "/React-Portfolio/static/media/tech2.640faf59.png",
@@ -38,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.8e19d3e9.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.a3064aec.chunk.js",
-    "static/js/main.9b8b1d5a.chunk.js"
+    "static/js/2.0b5c83fe.chunk.js",
+    "static/js/main.86416430.chunk.js"
   ]
 }

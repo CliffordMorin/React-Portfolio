@@ -28,6 +28,8 @@ import tech3 from "./img/tech3.png";
 
 import glenn1 from "./img/glenn1.png";
 
+import qouteQuiz from "./img/qoute-quiz.png";
+
 export const ProjectState = () => {
   return [
     {
@@ -447,6 +449,49 @@ export const ProjectState = () => {
           description: (
             <a
               href="https://github.com/CliffordMorin/Tech-blog"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                size="7x"
+                color="#23D997"
+              />
+            </a>
+          ),
+        },
+      ],
+    },
+    {
+      title: "Qoute Quiz",
+      mainImg: qouteQuiz,
+      secondaryImg: null,
+      url: "/work/qoute-quiz",
+      blurbs: [
+        {
+          title: "Description",
+          description:
+            "A React app using a famous quotes api and React Redux to create an interactive game for the user.",
+        },
+        {
+          title: "Deployed Application",
+          description: (
+            <a
+              href="https://quotequiz.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.button variants={fadeAnim}>
+                View Application
+              </motion.button>
+            </a>
+          ),
+        },
+        {
+          title: "GitHub repository",
+          description: (
+            <a
+              href="https://github.com/zachinjapan/quotes"
               target="_blank"
               rel="noreferrer"
             >

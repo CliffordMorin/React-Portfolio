@@ -13,6 +13,7 @@ import musicPlayerLibrary from "../img/music2.png";
 import cliffHome from "../img/cliffHome.png";
 import mindump2 from "../img/mindump2.png";
 import glenn1 from "../img/glenn1.png";
+import qouteQuiz from "../img/qoute-quiz.png";
 //Animation
 import { motion } from "framer-motion";
 import {
@@ -36,6 +37,7 @@ const MyWork = () => {
   const [element4, controls4] = useScroll();
   const [element5, controls5] = useScroll();
   const [element6, controls6] = useScroll();
+  const [element7, controls7] = useScroll();
   return (
     <StyledWork
       variants={pageAnimation}
@@ -118,6 +120,18 @@ const MyWork = () => {
         <motion.div variants={lineAnim} className="line" />
         <Link to="/work/music-player-app">
           <img src={musicPlayerLibrary} alt="musicPlayerLibrary" />
+        </Link>
+      </StyledProject>
+      <StyledProject
+        ref={element7}
+        variants={fadeAnim}
+        animate={controls7}
+        initial="hidden"
+      >
+        <h2>Qoute Quiz</h2>
+        <motion.div variants={lineAnim} className="line" />
+        <Link to="/work/qoute-quiz">
+          <img src={qouteQuiz} alt="qouteQuiz" />
         </Link>
       </StyledProject>
       <StyledProject

@@ -76,7 +76,7 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "Music Website",
+      title: "Professional Website",
       mainImg: glenn1,
       secondaryImg: glenn1,
       url: "/work/glenn",
@@ -90,7 +90,7 @@ export const ProjectState = () => {
           title: "Deployed Application",
           description: (
             <a
-              href="https://musing-archimedes-c4ef25.netlify.app/"
+              href="https://www.glenndongifford.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -119,7 +119,7 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "Music Website",
+      title: "Professional Website",
       mainImg: cliffHome,
       secondaryImg: cliffHome,
       url: "/work/cliff-music",

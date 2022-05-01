@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/React-Portfolio/static/js/main.b5176859.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.b5176859.chunk.js.map",
+    "main.js": "/React-Portfolio/static/js/main.f681aebc.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.f681aebc.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/React-Portfolio/static/css/2.4c97ca4f.chunk.css",
@@ -29,7 +29,7 @@
     "static/media/pokemonGif.8abbd4c6.gif": "/React-Portfolio/static/media/pokemonGif.8abbd4c6.gif",
     "static/media/pokemonHome.7dab5243.png": "/React-Portfolio/static/media/pokemonHome.7dab5243.png",
     "static/media/qoute-quiz.d0584ab3.png": "/React-Portfolio/static/media/qoute-quiz.d0584ab3.png",
-    "static/media/resume-2022.73cddabb.pdf": "/React-Portfolio/static/media/resume-2022.73cddabb.pdf",
+    "static/media/resume-2022.26063a96.pdf": "/React-Portfolio/static/media/resume-2022.26063a96.pdf",
     "static/media/tech1.90f8a292.png": "/React-Portfolio/static/media/tech1.90f8a292.png",
     "static/media/tech2.640faf59.png": "/React-Portfolio/static/media/tech2.640faf59.png",
     "static/media/tech3.e097194e.png": "/React-Portfolio/static/media/tech3.e097194e.png",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.8e19d3e9.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.0b5c83fe.chunk.js",
-    "static/js/main.b5176859.chunk.js"
+    "static/js/main.f681aebc.chunk.js"
   ]
 }

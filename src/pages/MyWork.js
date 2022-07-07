@@ -13,7 +13,8 @@ import musicPlayerLibrary from "../img/music2.png";
 import cliffHome from "../img/cliffHome.png";
 import mindump2 from "../img/mindump2.png";
 import glenn1 from "../img/glenn1.png";
-import qouteQuiz from "../img/qoute-quiz.png";
+import quoteQuiz from "../img/quote-quiz.png";
+import eCommerce1 from "../img/eCommerce1.png";
 //Animation
 import { motion } from "framer-motion";
 import {
@@ -29,8 +30,6 @@ import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
 const MyWork = () => {
-  const [element01, controls01] = useScroll();
-  const [element0, controls0] = useScroll();
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
@@ -38,6 +37,9 @@ const MyWork = () => {
   const [element5, controls5] = useScroll();
   const [element6, controls6] = useScroll();
   const [element7, controls7] = useScroll();
+  const [element8, controls8] = useScroll();
+  const [element9, controls9] = useScroll();
+  const [element10, controls10] = useScroll();
   return (
     <StyledWork
       variants={pageAnimation}
@@ -62,7 +64,7 @@ const MyWork = () => {
 				</Link>
 			</StyledProject> */}
       <StyledProject>
-        <motion.h2 variants={fadeAnim}>MINDUMP APP</motion.h2>
+        <motion.h2 variants={fadeAnim}>Social Media App</motion.h2>
         <motion.div variants={lineAnim} className="line" />
         <Link to="/work/mindump">
           <Hide>
@@ -75,21 +77,33 @@ const MyWork = () => {
         </Link>
       </StyledProject>
       <StyledProject
-        ref={element01}
+        ref={element10}
         variants={fadeAnim}
-        animate={controls01}
+        animate={controls10}
         initial="hidden"
       >
-        <h2>Music Website</h2>
+        <h2>E-Commerce App</h2>
+        <motion.div variants={lineAnim} className="line" />
+        <Link to="/work/e-commerce-app">
+          <img src={eCommerce1} alt="e-commerce" />
+        </Link>
+      </StyledProject>
+      <StyledProject
+        ref={element8}
+        variants={fadeAnim}
+        animate={controls8}
+        initial="hidden"
+      >
+        <h2>Professional Site</h2>
         <motion.div variants={lineAnim} className="line" />
         <Link to="/work/glenn">
           <img src={glenn1} alt="..." />
         </Link>
       </StyledProject>
       <StyledProject
-        ref={element0}
+        ref={element9}
         variants={fadeAnim}
-        animate={controls0}
+        animate={controls9}
         initial="hidden"
       >
         <h2>Pokemon APP</h2>
@@ -128,10 +142,10 @@ const MyWork = () => {
         animate={controls7}
         initial="hidden"
       >
-        <h2>Qoute Quiz</h2>
+        <h2>Quote Quiz</h2>
         <motion.div variants={lineAnim} className="line" />
         <Link to="/work/qoute-quiz">
-          <img src={qouteQuiz} alt="qouteQuiz" />
+          <img src={quoteQuiz} alt="quoteQuiz" />
         </Link>
       </StyledProject>
       <StyledProject

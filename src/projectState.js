@@ -26,9 +26,12 @@ import marsBooking from "./img/marsBooking.gif";
 import tech2 from "./img/tech2.png";
 import tech3 from "./img/tech3.png";
 
+import eCommerce1 from "./img/eCommerce1.png";
+import eCommerce2 from "./img/eCommerce2.png";
+
 import glenn1 from "./img/glenn1.png";
 
-import qouteQuiz from "./img/qoute-quiz.png";
+import quoteQuiz from "./img/quote-quiz.png";
 
 export const ProjectState = () => {
   return [
@@ -119,7 +122,7 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "Professional Website",
+      title: "Music Website",
       mainImg: cliffHome,
       secondaryImg: cliffHome,
       url: "/work/cliff-music",
@@ -162,7 +165,7 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "MINDUMP APP",
+      title: "Social Media App",
       mainImg: mindump2,
       secondaryImg: mindump3,
       url: "/work/mindump",
@@ -463,10 +466,10 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "Qoute Quiz",
-      mainImg: qouteQuiz,
+      title: "Quote Quiz",
+      mainImg: quoteQuiz,
       secondaryImg: null,
-      url: "/work/qoute-quiz",
+      url: "/work/quote-quiz",
       blurbs: [
         {
           title: "Description",
@@ -492,6 +495,49 @@ export const ProjectState = () => {
           description: (
             <a
               href="https://github.com/zachinjapan/quotes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                size="7x"
+                color="#23D997"
+              />
+            </a>
+          ),
+        },
+      ],
+    },
+    {
+      title: "E-Commerce App",
+      mainImg: eCommerce1,
+      secondaryImg: eCommerce2,
+      url: "/work/e-commerce-app",
+      blurbs: [
+        {
+          title: "Description",
+          description:
+            "This mern stack application is a functional professional e-commerce website that users can browse items, add them to there cart and checkout/purchase those items using stripe.io. Users can also sign in and create an account using auth0, this account then tracks all of your recent purchases. This application uses languages such as next.js, strapi.io, stripe, graphQL, react.js, html, css, styled components, auth0, and more.",
+        },
+        {
+          title: "Deployed Application",
+          description: (
+            <a
+              href="https://e-commerce-site-tawny.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.button variants={fadeAnim}>
+                View Application
+              </motion.button>
+            </a>
+          ),
+        },
+        {
+          title: "GitHub repository",
+          description: (
+            <a
+              href="https://github.com/CliffordMorin/E-Commerce-Site"
               target="_blank"
               rel="noreferrer"
             >

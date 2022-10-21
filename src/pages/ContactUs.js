@@ -58,11 +58,11 @@ const ContactUs = () => {
             <SocialStyle variants={titleAnim}>
               <FontAwesomeIcon icon={faEnvelopeSquare} size="3x" color="Grey" />
               <a
-                href="mailto:cemorin21@gmail.com"
+                href="mailto:cliffthedev@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <h2>Cemorin21@gmail.com</h2>
+                <h2>cliffthedev@gmail.com</h2>
               </a>
             </SocialStyle>
           </Hide>
@@ -95,7 +95,7 @@ const ContactUs = () => {
 
               <a
                 className="linkedin"
-                href="https://www.linkedin.com/in/morin-clifford-129888a9"
+                href="https://www.linkedin.com/in/clifford-morin-ma-129888a9/ "
                 target="_blank"
                 rel="noreferrer"
               >

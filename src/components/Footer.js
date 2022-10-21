@@ -23,8 +23,8 @@ const Footer = () => {
             <p className="text-justify">
               Clifford Morin is a full-stack javascript web-developer and
               designer based in Philadelphia, PA. Clifford has a BM from West
-              Chester University and an MM from Temple University. After
-              learning how to code at a Rutgers University six month long
+              Chester University and an MA from Temple University. After
+              graduating in july 2021 from a Rutgers University six month long
               intensive full-stack coding bootcamp, Clifford is equipped with
               all the skills it takes to build your next web site or
               application.
@@ -56,11 +56,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:cemorin21@gmail.com"
+                  href="mailto:cliffthedev@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  cemorin21@gmail.com
+                  cliffthedev@gmail.com
                 </a>
               </li>
               <li>
@@ -115,7 +115,7 @@ const Footer = () => {
               <li>
                 <a
                   className="linkedin"
-                  href="https://www.linkedin.com/in/morin-clifford-129888a9"
+                  href="https://www.linkedin.com/in/clifford-morin-ma-129888a9/"
                   target="_blank"
                   rel="noreferrer"
                 >

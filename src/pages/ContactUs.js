@@ -68,22 +68,13 @@ const ContactUs = () => {
           </Hide>
           <Hide>
             <SocialStyle variants={titleAnim}>
-              <FontAwesomeIcon icon={faPhone} size="3x" color="#3ded0c" />
-              <a href="tel:1+609-602-7201" target="_blank" rel="noreferrer">
-                <h2>(609)602-7201</h2>
-              </a>
-            </SocialStyle>
-          </Hide>
-
-          <Hide>
-            <SocialStyle variants={titleAnim}>
               <FontAwesomeIcon icon={faMapMarkedAlt} size="3x" color="Green" />
               <a
-                href="https://www.google.com/maps/place/Philadelphia,+PA/@40.0026767,-75.2581132,11z/data=!3m1!4b1!4m5!3m4!1s0x89c6b7d8d4b54beb:0x89f514d88c3e58c1!8m2!3d39.9525839!4d-75.1652215"
+                href="https://www.google.com/maps/place/Cardiff,+Encinitas,+CA+92007/@33.0326543,-117.289133,14z/data=!4m5!3m4!1s0x80dc0eaa1c828551:0x8675dcdd631d93c1!8m2!3d33.0208265!4d-117.2788973"
                 target="_blank"
                 rel="noreferrer"
               >
-                <h2>Philadelphia, PA, USA</h2>
+                <h2>Encinitas CA, USA</h2>
               </a>
             </SocialStyle>
           </Hide>

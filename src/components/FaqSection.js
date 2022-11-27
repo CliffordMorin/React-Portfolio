@@ -43,9 +43,8 @@ const FaqSection = () => {
         <Toggle title="What are your preferences on location for working?">
           <div className="answer">
             <p>
-              I currently live in Phildelphia, PA. I would prefer a remote job.
-              Although, I am open to working in or around Philadelphia PA,
-              Princeton NJ or New York City area for work.
+              I currently live in Enicinitas, CA. I would prefer a remote job.
+              Although, I am open to working in or around San Diego or LA.
             </p>
           </div>
         </Toggle>

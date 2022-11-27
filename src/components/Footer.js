@@ -14,6 +14,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <StyledFooter>
       <div className="container">
@@ -22,10 +24,10 @@ const Footer = () => {
             <h5>About</h5>
             <p className="text-justify">
               Clifford Morin is a full-stack javascript web-developer and
-              designer based in Philadelphia, PA. Clifford has a BM from West
+              designer based in Encinitas, CA. Clifford has a BM from West
               Chester University and an MA from Temple University. After
               graduating in july 2021 from a Rutgers University six month long
-              intensive full-stack coding bootcamp, Clifford is equipped with
+              intensive full-stack coding boot camp, Clifford is equipped with
               all the skills it takes to build your next web site or
               application.
             </p>
@@ -50,11 +52,6 @@ const Footer = () => {
             <h5>Contact Info</h5>
             <ul className="footer-links">
               <li>
-                <a href="tel:1+609-602-7201" target="_blank" rel="noreferrer">
-                  (609)602-7201
-                </a>
-              </li>
-              <li>
                 <a
                   href="mailto:cliffthedev@gmail.com"
                   target="_blank"
@@ -65,11 +62,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.google.com/maps/place/Philadelphia,+PA/@40.0026767,-75.2581132,11z/data=!3m1!4b1!4m5!3m4!1s0x89c6b7d8d4b54beb:0x89f514d88c3e58c1!8m2!3d39.9525839!4d-75.1652215"
+                  href="https://www.google.com/maps/place/Cardiff,+Encinitas,+CA+92007/@33.0326543,-117.289133,14z/data=!4m5!3m4!1s0x80dc0eaa1c828551:0x8675dcdd631d93c1!8m2!3d33.0208265!4d-117.2788973"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Philadelphia, PA, USA
+                  Encinitas, CA, USA
                 </a>
               </li>
             </ul>
@@ -81,8 +78,8 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
             <p className="copyright-text">
-              Built by and Copyright &copy; 2021 All Rights Reserved by Clifford
-              Morin
+              Built by and Copyright &copy; {year} All Rights Reserved by
+              Clifford Morin
             </p>
           </div>
 

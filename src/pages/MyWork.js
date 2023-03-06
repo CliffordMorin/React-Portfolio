@@ -12,6 +12,7 @@ import mars1 from "../img/mars1.png";
 import musicPlayerLibrary from "../img/music2.png";
 import cliffHome from "../img/cliffHome.png";
 import mindump2 from "../img/mindump2.png";
+import martin1 from "../img/martin-site.png";
 import glenn1 from "../img/glenn1.png";
 import quoteQuiz from "../img/quote-quiz.png";
 import eCommerce1 from "../img/eCommerce1.png";
@@ -96,11 +97,23 @@ const MyWork = () => {
       >
         <h2>Professional Site</h2>
         <motion.div variants={lineAnim} className="line" />
+        <Link to="/work/martin">
+          <img src={martin1} alt="..." />
+        </Link>
+      </StyledProject>
+      <StyledProject
+        ref={element9}
+        variants={fadeAnim}
+        animate={controls9}
+        initial="hidden"
+      >
+        <h2>Professional Site</h2>
+        <motion.div variants={lineAnim} className="line" />
         <Link to="/work/glenn">
           <img src={glenn1} alt="..." />
         </Link>
       </StyledProject>
-      <StyledProject
+      {/* <StyledProject
         ref={element9}
         variants={fadeAnim}
         animate={controls9}
@@ -111,7 +124,7 @@ const MyWork = () => {
         <Link to="/work/pokemon-TCG-app">
           <img src={pokemonHome} alt="pokemonGif" />
         </Link>
-      </StyledProject>
+      </StyledProject> */}
       <StyledProject
         ref={element}
         variants={fadeAnim}

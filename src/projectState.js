@@ -31,6 +31,8 @@ import eCommerce2 from "./img/eCommerce2.png";
 
 import glenn1 from "./img/glenn1.png";
 
+import martin1 from "./img/martin-site.png";
+
 import quoteQuiz from "./img/quote-quiz.png";
 
 export const ProjectState = () => {
@@ -65,6 +67,49 @@ export const ProjectState = () => {
           description: (
             <a
               href="https://github.com/thebadams/mars-travel-agency"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                size="7x"
+                color="#23D997"
+              />
+            </a>
+          ),
+        },
+      ],
+    },
+    {
+      title: "Professional Website",
+      mainImg: martin1,
+      secondaryImg: martin1,
+      url: "/work/martin",
+      blurbs: [
+        {
+          title: "Description",
+          description:
+            "This application is a functional professional musician website I built for a client. Some of the technologies I used are React, JS, and mainly Material-UI. The goal of this website was to build it from scratch using Material-UI to really understand how to use it effectively.",
+        },
+        {
+          title: "Deployed Application",
+          description: (
+            <a
+              href="https://www.martindiazmusic.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.button variants={fadeAnim}>
+                View Application
+              </motion.button>
+            </a>
+          ),
+        },
+        {
+          title: "GitHub repository",
+          description: (
+            <a
+              href="https://github.com/CliffordMorin/martin-diaz-music"
               target="_blank"
               rel="noreferrer"
             >

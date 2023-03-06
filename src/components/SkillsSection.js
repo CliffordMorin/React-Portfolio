@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 //Import Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -25,6 +25,16 @@ import { lineAnim } from "../animation";
 
 const SkillsSection = () => {
   const [element, controls] = useScroll();
+  const [width, setWidth] = useState(window.innerWidth);
+  const smallScreen = width < 768;
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  });
+
   return (
     <StyledSkills
       variants={scrollReveal}
@@ -43,7 +53,11 @@ const SkillsSection = () => {
         <StyledCards>
           <StyledCard>
             <div className="icon">
-              <FontAwesomeIcon icon={faHtml5} color="#ffa200f7" size="7x" />
+              <FontAwesomeIcon
+                icon={faHtml5}
+                color="#ffa200f7"
+                size={smallScreen ? "5x" : "7x"}
+              />
             </div>
           </StyledCard>
           <StyledCard>
@@ -51,7 +65,7 @@ const SkillsSection = () => {
               <FontAwesomeIcon
                 icon={faCss3Alt}
                 color="rgb(0, 0, 255)"
-                size="7x"
+                size={smallScreen ? "5x" : "7x"}
               />
             </div>
           </StyledCard>
@@ -60,7 +74,7 @@ const SkillsSection = () => {
               <FontAwesomeIcon
                 icon={faJsSquare}
                 color="rgb(255, 234, 0)"
-                size="7x"
+                size={smallScreen ? "5x" : "7x"}
               />
             </div>
           </StyledCard>
@@ -69,13 +83,17 @@ const SkillsSection = () => {
               <FontAwesomeIcon
                 icon={faBootstrap}
                 color="rgb(149, 0, 255)"
-                size="7x"
+                size={smallScreen ? "5x" : "7x"}
               />
             </div>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <FontAwesomeIcon icon={faNode} color="rgb(0, 255, 8)" size="7x" />
+              <FontAwesomeIcon
+                icon={faNode}
+                color="rgb(0, 255, 8)"
+                size={smallScreen ? "5x" : "7x"}
+              />
             </div>
           </StyledCard>
           <StyledCard>
@@ -83,7 +101,7 @@ const SkillsSection = () => {
               <FontAwesomeIcon
                 icon={faReact}
                 color="rgb(0, 255, 251)"
-                size="7x"
+                size={smallScreen ? "5x" : "7x"}
                 spin
               />
             </div>
@@ -111,6 +129,7 @@ const StyledCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   @media (max-width: 1300px) {
+    flex-wrap: nowrap;
     justify-content: center;
     text-align: center;
   }
@@ -123,6 +142,10 @@ const StyledCard = styled.div`
     padding-bottom: 3rem;
     @media (max-width: 1300px) {
       justify-content: center;
+    }
+    @media (max-width: 768px) {
+      flex-basis: 10rem;
+      padding: 0 2px;
     }
   }
 `;

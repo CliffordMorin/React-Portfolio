@@ -1,7 +1,7 @@
 import React from "react";
 //Import Icons
 import home2 from "../img/home2.jpeg";
-import Resume from "../Resume/resume-2022.pdf";
+import Resume from "../Resume/Clifford-Morin-2023.pdf";
 //Style
 import styled from "styled-components";
 import { StyledAbout, StyledImage, StyledDescription } from "../styles";
@@ -27,22 +27,23 @@ const AboutMeSection = () => {
         <motion.div variants={lineAnim} className="line"></motion.div>
         <StyledCards>
           <p>
-            Hello! I am Clifford Morin, and welcome to my portfolio webpage! I
-            am currently attending a six month coding bootcamp at Rutgers
-            University in order to learn how to become a full-stack
-            web-developer and designer. Through recieving a Bachelor's and a
-            Master's in Jazz Performance for Saxophone, as well as having a
-            successful full time performing career, I have obtained a certain
-            skill set that I can apply to my software engineering skills. In my
-            career I hope to be able to combine both of my passions to work with
-            and create new forms of music software. When I am not coding you can
-            find me on bandstand's across the world performing with world class
-            musicians!
+            Hello, I'm Clifford Morin, a Web Developer and Software Engineer
+            based in Cardiff By The Sea, California. I hold a Full Stack Web
+            Development Certificate from Rutgers University and have designed
+            and developed custom websites and web applications for diverse
+            clients using HTML, CSS, JavaScript, React, and Node.js. In addition
+            to my technical skills, I bring a unique perspective to software
+            engineering from my Bachelor's and Master's degrees in Jazz
+            Performance for Saxophone and successful career as a performing
+            musician. I am passionate about combining my skills and interests to
+            create new forms of music software. When I'm not coding, you can
+            find me on stages across the world performing with world-class
+            musicians. Welcome to my portfolio webpage!
           </p>
           <a
             href={Resume}
             target="_blank"
-            download="resume-2022"
+            download="CLifford-Morin-2023.pdf"
             rel="noreferrer"
           >
             <motion.button variants={fadeAnim}>Download Resume</motion.button>

@@ -23,13 +23,18 @@ const Footer = () => {
           <div className="col-sm-12 col-md-6">
             <h5>About</h5>
             <p className="text-justify">
-              Clifford Morin is a full-stack javascript web-developer and
-              designer based in Encinitas, CA. Clifford has a BM from West
-              Chester University and an MA from Temple University. After
-              graduating in july 2021 from a Rutgers University six month long
-              intensive full-stack coding boot camp, Clifford is equipped with
-              all the skills it takes to build your next web site or
-              application.
+              Clifford Morin is a highly skilled and motivated full-stack web
+              developer and designer based in Cardiff-by-the-sea, CA. With a
+              Bachelor's in Music from West Chester University and a Master's in
+              Jazz Performance/Composition from Temple University/Conservatorium
+              van Amsterdam, Clifford brings a unique perspective to software
+              engineering. After graduating from a rigorous six-month coding
+              bootcamp at Rutgers University in July 2021, Clifford is
+              proficient in a range of technologies including HTML, CSS,
+              JavaScript, React, Node.js, and more. With a passion for building
+              high-quality websites and web applications, Clifford is dedicated
+              to exceeding client expectations and delivering exceptional
+              results.
             </p>
           </div>
 

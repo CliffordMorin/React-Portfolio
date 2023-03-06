@@ -17,7 +17,7 @@ import musicPlayerHome from "./img/music1.png";
 import musicPlayerLibrary from "./img/music2.png";
 import cliffHome from "./img/cliffHome.png";
 
-import mindump1 from "./img/mindump1.png";
+// import mindump1 from "./img/mindump1.png";
 import mindump2 from "./img/mindump2.png";
 import mindump3 from "./img/mindump3.png";
 
@@ -32,6 +32,7 @@ import eCommerce2 from "./img/eCommerce2.png";
 import glenn1 from "./img/glenn1.png";
 
 import martin1 from "./img/martin-site.png";
+import martin2 from "./img/martin2.png";
 
 import quoteQuiz from "./img/quote-quiz.png";
 
@@ -83,7 +84,7 @@ export const ProjectState = () => {
     {
       title: "Professional Website",
       mainImg: martin1,
-      secondaryImg: martin1,
+      secondaryImg: martin2,
       url: "/work/martin",
       blurbs: [
         {

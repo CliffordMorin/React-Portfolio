@@ -17,7 +17,6 @@ import {
   faEnvelopeSquare,
   faMapMarkedAlt,
   faUserAstronaut,
-  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
 //style

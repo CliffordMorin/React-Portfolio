@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import pokemonGif from "../img/pokemonGif.gif";
-import pokemonHome from "../img/pokemonHome.png";
+// import pokemonGif from "../img/pokemonGif.gif";
+// import pokemonHome from "../img/pokemonHome.png";
 import movie from "../img/movie.png";
 import budgetGif from "../img/BudgetGif.gif";
 import tech1 from "../img/tech1.png";
 import workout1 from "../img/workout1.png";
-import mars1 from "../img/mars1.png";
+// import mars1 from "../img/mars1.png";
 import musicPlayerLibrary from "../img/music2.png";
 import cliffHome from "../img/cliffHome.png";
 import mindump2 from "../img/mindump2.png";

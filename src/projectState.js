@@ -34,6 +34,9 @@ import glenn1 from "./img/glenn1.png";
 import martin1 from "./img/martin-site.png";
 import martin2 from "./img/martin2.png";
 
+import todo1 from "./img/todo1.png";
+import todo2 from "./img/todo2.png";
+
 import quoteQuiz from "./img/quote-quiz.png";
 
 export const ProjectState = () => {
@@ -68,6 +71,49 @@ export const ProjectState = () => {
           description: (
             <a
               href="https://github.com/thebadams/mars-travel-agency"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                size="7x"
+                color="#23D997"
+              />
+            </a>
+          ),
+        },
+      ],
+    },
+    {
+      title: "Todo App",
+      mainImg: todo1,
+      secondaryImg: todo2,
+      url: "/work/todo",
+      blurbs: [
+        {
+          title: "Description",
+          description:
+            "I made this simple todo app that allows you to add, delete, and mark tasks as complete for a front end developer position with rapptrlabs. This app was built using strictly React, JS, and CSS. Using local storage to save your tasks so that they are not lost when you refresh the page. Login and signup functionality is also included by using an API sent to rapptrlabs in order to login into the app. For now you must use the credentials below to login. Username: test@rapptrlabs.com Password: Test123",
+        },
+        {
+          title: "Deployed Application",
+          description: (
+            <a
+              href="https://singular-paprenjak-896541.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.button variants={fadeAnim}>
+                View Application
+              </motion.button>
+            </a>
+          ),
+        },
+        {
+          title: "GitHub repository",
+          description: (
+            <a
+              href="https://github.com/CliffordMorin/Todo-app"
               target="_blank"
               rel="noreferrer"
             >

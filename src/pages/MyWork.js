@@ -16,6 +16,7 @@ import martin1 from "../img/martin-site.png";
 import glenn1 from "../img/glenn1.png";
 import quoteQuiz from "../img/quote-quiz.png";
 import eCommerce1 from "../img/eCommerce1.png";
+import todo2 from "../img/todo2.png";
 //Animation
 import { motion } from "framer-motion";
 import {
@@ -41,6 +42,7 @@ const MyWork = () => {
   const [element8, controls8] = useScroll();
   const [element9, controls9] = useScroll();
   const [element10, controls10] = useScroll();
+  const [element11, controls11] = useScroll();
   return (
     <StyledWork
       variants={pageAnimation}
@@ -135,6 +137,18 @@ const MyWork = () => {
         <motion.div variants={lineAnim} className="line" />
         <Link to="/work/cliff-music">
           <img src={cliffHome} alt="cliffHome" />
+        </Link>
+      </StyledProject>
+      <StyledProject
+        ref={element11}
+        variants={fadeAnim}
+        animate={controls11}
+        initial="hidden"
+      >
+        <h2>Todo App</h2>
+        <motion.div variants={lineAnim} className="line" />
+        <Link to="/work/todo">
+          <img src={todo2} alt="..." />
         </Link>
       </StyledProject>
       <StyledProject

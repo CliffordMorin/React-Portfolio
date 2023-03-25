@@ -84,4 +84,4 @@ Fork, request, or contact me.
 [![GitHub](https://img.shields.io/badge/My%20GitHub-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/CliffordMorin)
 [![LinkedIn](https://img.shields.io/badge/My%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/morin-clifford-129888a9/)
 
-Feel free to reach me at cemorin21@gmail.com with any question regarding this project!
+Feel free to reach me at cliffthedev@gmail.com with any question regarding this project!

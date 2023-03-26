@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://CliffordMorin.github.io/React-Portfolio",
+  "homepage": "https://cliffordmorin.dev",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

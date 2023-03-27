@@ -156,7 +156,7 @@ export const ProjectState = () => {
           title: "GitHub repository",
           description: (
             <a
-              href="https://github.com/CliffordMorin/martin-diaz-music"
+              href="https://github.com/CliffordMorin/martin-diaz-website"
               target="_blank"
               rel="noreferrer"
             >

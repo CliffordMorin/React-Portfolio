@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { ProjectState } from "../projectState";
 //Animation
 import { motion } from "framer-motion";
@@ -9,18 +9,17 @@ import { pageAnimation, lineAnim } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 
 const ProjectDetail = () => {
-  const history = useHistory();
-  const url = history.location.pathname;
+  const location = useLocation();
   const [projects, setProjects] = useState(ProjectState);
   const [project, setProject] = useState(null);
 
   //useEffect
   useEffect(() => {
     const currentProject = projects.filter(
-      (stateProject) => stateProject.url === url
+      (stateProject) => stateProject.url === location.pathname
     );
     setProject(currentProject[0]);
-  }, [projects, url]);
+  }, [projects, location]);
 
   return (
     <>

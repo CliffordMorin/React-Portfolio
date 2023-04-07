@@ -10,11 +10,12 @@ import ScrollTop from "../components/ScrollTop";
 
 const ProjectDetail = () => {
   const location = useLocation();
-  const [projects, setProjects] = useState(ProjectState);
+  const [projects, setProjects] = useState([]);
   const [project, setProject] = useState(null);
 
   //useEffect
   useEffect(() => {
+    setProjects(ProjectState);
     const currentProject = projects.filter(
       (stateProject) => stateProject.url === location.pathname
     );
